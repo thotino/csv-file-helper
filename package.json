@@ -29,7 +29,7 @@
     "covci": "./node_modules/.bin/nyc --lines=90",
     "lint": "./node_modules/.bin/standard .",
     "lintfix": "./node_modules/.bin/standard . --fix",
-    "test": "NODE_ENV=test jest --coverage --verbose --forceExit"
+    "test": "jest --coverage --verbose --detectOpenHandles"
   },
   "config": {},
   "standard": {
