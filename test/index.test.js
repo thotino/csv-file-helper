@@ -1,10 +1,9 @@
-"use strict";
+'use strict'
 
-const parsingModule = require("../index");
-const path = require("path");
+const parsingModule = require('../index')
+const path = require('path')
 
-const fileAbsolutepath = path.resolve(__dirname, "data/TechCrunchcontinentalUSA.csv");
+const fileAbsolutepath = path.resolve(__dirname, 'data/TechCrunchcontinentalUSA.csv')
 
-parsingModule.parseFile.parseFile(fileAbsolutepath).then((data) => {
-  console.log("data : ", data);
-});
+const data = await parsingModule.parseFile.parseFile(fileAbsolutepath)
+console.log({ data })
