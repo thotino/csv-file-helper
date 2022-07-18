@@ -7,7 +7,7 @@ const fileAbsolutepath = path.resolve(__dirname, 'data/TechCrunchcontinentalUSA.
 
 describe('[unit] test support domain', () => {
   test('Everything fine here', async () => {
-    await expect(parsingModule.parseFile(null)).rejects.toThrow('ERR_NO_FILE_PATH_PROVIDED')    
+    await expect(parsingModule.parseFile(null)).rejects.toThrow('ERR_NO_FILE_PATH_PROVIDED')
   })
   test.only('Everything fine here', async () => {
     const data = await parsingModule.parseFile(fileAbsolutepath, ',')
